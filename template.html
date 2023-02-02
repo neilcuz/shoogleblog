@@ -1,0 +1,79 @@
+
+<! --
+Set Styles
+-->
+
+<style> 
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 19px;
+}
+
+blockquote {
+  font-size: 19px;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 35px;
+  font-style: bold;
+}
+
+h5 {
+  font-size: 30px;
+  font-style: bold;
+}
+
+pre {
+  background: #f5f5f5;
+  page-break-inside: avoid;
+  font-family: courier;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+</style>
+
+<! --
+Start Blog Post
+-->
+
+<body>
+  <h4>First things first, what does big data mean?</h4>
+  
+<p1>
+Being a lazy person in February 2023 I of course asked ChatGPT this question. The response was extremely boring. So I asked it to spice it up a bit:
+</p1>
+
+<blockquote>
+"Big data is the 21st century's gold rush! Imagine mountains of information waiting to be mined for hidden treasures, insights, and opportunities…”
+</blockquote>
+
+This rambling went on for quite a while so I threw in the towel and drew a handy chart instead, outlining the various levels of big data as I see them and how they relate to R (and Excel for good measure).
+
+<br>
+<ul>
+  <li>Reproducibility is much stronger in R. Write your code and you have a detailed set of instructions of exactly what is happening. In Excel, calculations are buried in individual cells.
+  </li>
+  
+  <li>It’s much easier to accidentally add a mistake in to Excel. Maybe you hardcode a value in a cell where a calculation should be when you are running your analysis. To run your script you just hit a button, no copy and paste required.
+  </li>
+  
+  <li>You can tackle much more complex problems with R and often someone has already wrote the code for you built into R or in a package.
+  </li>
+</ul>
+
+<pre>
+  library(readr) # load the readr package
+  data <- read_csv(“path-to-my-data/my-data.csv”)
+</pre>
+</body>
